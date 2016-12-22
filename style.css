@@ -1,0 +1,674 @@
+.header{
+	margin:0;
+	font-family:Verdana;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+	background-color:#F3F3F3;
+	height: 114px;
+	padding: 0;
+}
+
+html, body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+.main{
+	margin:0;
+	font-family:Verdana;
+}
+
+@media only screen  and (min-width: 950px){
+	.responsiveMenu{
+		display: none;
+	}
+
+	#responsiveMenu-content{
+		display: none !important;
+	}
+}
+
+#wrapper {
+	min-height:100%;
+	position:relative;
+}
+
+#footer{
+	width:100%;
+	position:absolute;
+	bottom:0;
+	left:0;
+}
+
+#mainPageContent{
+	padding-bottom: 101px;
+}
+
+/*Social Media*/
+
+#socialMedia ul{
+
+	margin-top: 10px;
+	margin-right: 5px;
+	float: right;
+}
+
+#socialMedia ul li{
+	
+	display: inline;
+	padding: 0px 1px
+}
+
+#socialMedia ul li img{
+	height:25;
+}
+
+/*Social Media*/
+
+/*header*/
+
+#header{
+	background-color:#F3F3F3;
+}
+
+.floatLeft{
+	float:left;
+}
+
+.floatRight{
+	float: right;
+}
+
+.floatLeft ul li{
+	vertical-align:middle;
+	display: inline-block;
+}
+#CFO{
+	font-size: 32px;
+	width:250px;
+	padding-left: 0%;
+	font-family: Didot;
+	text-align: center;
+	color: #006566;
+}
+
+#logo{
+	padding-left:4%;
+}
+
+/*header*/
+
+/*responsive menu*/
+
+
+.responsiveMenu button{
+	margin-top: 30px;
+	background-color: Transparent;
+	background-repeat:no-repeat;
+	border: none;
+	cursor:pointer;
+	overflow: hidden;
+	outline:none;
+}
+
+
+#responsiveMenu-content li{
+	display: inline;
+
+
+}
+
+#responsiveMenu-content li a {
+	text-decoration: none;
+	color: #006566;
+	font-family: Helvetica;
+}
+
+
+.dropbtn {
+	display: inline-block;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+}
+
+#responsiveMenu-content li{
+	padding: 10px;
+}
+
+.responsive-dropdown:hover .dropbtn {
+	background-color: #f9f9f9;
+}
+.dropdown-content{
+	float:left;
+	position: absolute;
+}
+
+li.responsive-dropdown {
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	float: left;
+	margin-left: 20px;
+	margin-top: 10px;
+}
+
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+
+}
+
+.dropdown-content a:hover {
+	background-color: #f1f1f1;
+}
+
+.responsive-dropdown:hover .dropdown-content {
+	display: block;
+
+}
+
+#responsiveMenu-content{
+	display: none;
+	padding: 10px;
+	background-color: #f9f9f9;
+
+}
+
+
+/*responsive menu*/
+
+/*navigation bar*/
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0; 
+}
+
+.drop-nav {
+	background-color: white;
+	position: absolute;
+	display: none;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.drop-nav li {
+	border-bottom: 1px solid rgba(255,255,255,.2);
+}
+
+
+.dropdown:hover > .drop-nav{
+	display: block;
+	margin-top: 10px; 
+	margin-left: -45px;		/* Helps Center the submenu */
+}
+
+
+#DonateDrop .drop-nav{
+	margin-left: -13px;			/* Helps center the donate submenu*/
+}
+
+#DonateDrop .drop-nav li{
+	width: 140px;		/* Helps center the donate submenu*/
+}
+
+/* This makes the margin area between the menu and submenu hoverable */
+#main-nav ul:before {
+	content: "";
+	display: block;
+	height: 20px;
+	position: absolute;
+	top: -20px;  
+	width: 100%;
+}
+
+#main-nav > li {
+	float: left;
+	width: 110px;
+	text-align: center;
+	border-left: solid 1px #006566;
+}
+
+#main-nav li:first-child {
+	border-left: none;
+}
+
+#main-nav li {
+	color: #006566;
+	display: block;
+	padding:5px;
+}
+
+#main-nav a , .dropdown a{
+	text-decoration: none;
+	color: #006566;
+}
+
+
+#AboutDrop li{
+	width: 200px;
+}
+
+.dropdown li a{
+	padding-left: 10px;
+	padding-right: 10px;
+	width: 140px;
+	color: #006566;
+}
+
+.dropdown:after {
+	font-size: .5em;
+	display: block;
+	top: 38%;
+	right: 12%;
+}
+
+
+#main-nav, .dropdown a:link{
+	font-family: Helvetica;
+	color: #006566;
+	text-decoration: none;
+}
+
+.navigation ul li:hover, .dropdown ul li:hover{
+	background: linear-gradient(#006667, #288383);
+	color: white !important;
+}
+
+#mainOption:hover a, .dropdown ul li:hover a{
+	color: white !important;
+	text-decoration: none;
+}
+
+#AboutDrop:hover, #DonateDrop:hover{
+	background: linear-gradient(#ffffff, #b8b2b8);
+	color: #006566 !important;
+}
+
+
+#main-nav{
+	background: linear-gradient(#ffffff, #b8b2b8);
+	float: right;
+	border:solid 1px #006566;
+	margin-top: 15px;
+	margin-right: 35px;
+}
+
+/*navigation bar*/
+
+/*Main Page*/
+
+.picture{
+	background-image:url("image/picture.jpg");
+	width:100%;
+	height: calc((100% - 114px));
+	background-size:cover;
+	background-position: center;
+}
+
+figure{
+	display: inline-block;
+	padding: 40px 0px;
+	margin-left: 10%
+}
+
+
+figure figcaption{
+	text-align: center;
+	padding-top: 25px;
+	font-size: 22px;
+}
+
+#optionBar{
+	background-color:#F3F3F3;	
+}
+
+/*Main Page*/
+
+
+
+/*Donate Button*/
+
+.buttonMainDiv .buttonMain{
+	margin-top: -25px;
+	
+}
+
+.buttonMainDiv{
+	text-align: center;
+	background-color:#F3F3F3;
+}
+
+.buttonMain {
+	font-family: Helvetica;
+	background-color: #006566;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 18px;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+	border-radius: 0px;
+}
+
+.buttonMain:hover{
+	background-color: #014647;
+}
+
+
+/*Donate Button*/
+
+/*Footer*/
+
+footer{
+	background-color:#F3F3F3;
+	color: #006566;
+	padding-top: 5px; 
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-bottom: 10px;
+	font-family:Verdana;
+
+}
+
+footer ul li img{
+	width: 20px;
+	border-radius: 50%;
+	background-color: #006566;
+	padding: 3px;
+	margin-left: 10px;
+}
+
+footer li:first-child{
+	margin-right: 20px;
+}
+
+footer ul li:nth-child(3) img{
+	padding: 5px;
+	width: 16px;
+}
+
+footer ul li{
+	vertical-align:middle;
+	display: inline-block;
+	padding-bottom: 5px;
+}
+
+footer p{
+	font-size: 14px;
+	color:#807877;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding-top: 10px;
+}
+
+footer div{
+	padding: 15px;
+	box-shadow: 0 0.5px 0.5px rgba(0,0,0,0.15), 0 10px 10px rgba(0,0,0,0.12);
+}
+
+footer a:hover img{
+	background-color:black;
+
+}
+
+/*Footer*/
+
+
+/*Board of director*/
+
+#board li{
+	display: inline-block;
+	margin: 0 auto;
+	padding-right: 3%;
+}
+
+#board li:last-child{ 
+	padding-right: 0;
+}
+
+#board ul{
+	margin: 0 auto;
+	text-align: center;
+}
+
+#board{
+	margin: 0 auto;
+	padding: 0;
+}
+
+.letter{
+	width: 100%;
+}
+
+#board img{
+	border-radius: 50%;
+	border: 1px solid #ddd;
+	padding: 5px;
+	height: 30%;
+	margin: 0;
+}
+
+#board figcaption{
+	font-family: Helvetica;
+	color: #006566;
+}
+/*Board of director*/
+
+/*for icon*/
+
+
+.body-icon:before{
+	content: "";
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	background-image:url("image/picture.jpg");
+	background-size:cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-position: 50% 0;
+	-ms-background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	opacity: 0.2;
+	margin:0;
+	padding:0;
+}
+
+.body-icon{
+	margin:0;
+	padding:0;
+}
+
+.div-icon{
+	padding-bottom: 151px;
+	padding-right: 10%;
+	padding-left: 10%;
+}
+
+@media only screen  and (max-width: 806px){
+	footer p{
+		font-size: 12px;
+	}
+
+	#mainPageContent{
+	padding-bottom: 98px;
+}
+}
+
+@media only screen  and (max-width: 688px){
+	.div-icon{
+		padding-bottom: 164px;
+	}
+}
+
+h1, h2, p, h3, h3{
+	color: #006566;
+	font-family: Helvetica;
+
+}
+
+p{
+	color: #006566;
+	font-family: Helvetica;
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+.core li{
+	list-style: disc;
+	color: #006566;
+	font-family: Helvetica;
+	font-size: 20px;
+	line-height: 1.5;
+}
+
+.headingIcon, .headingIconCenter{
+	font-size: 55px;
+	font-family: Helvetica;
+	text-align: center;
+	margin: 0;
+	padding:15px;
+
+}
+
+.paragraphIcon{
+	font-size: 20px;
+	font-family: Helvetica;
+}
+
+.listingIcon{
+	list-style-type: circle;
+	padding:0;
+	margin:0;
+	font-size: 20px;
+	font-family: Helvetica;
+	color: #006566;
+}
+
+.listingIcon li{
+	padding-top: 15px;
+}
+
+
+div.imageEventPolaroid{
+	width: 100%;
+	background-color: white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin-bottom: 25px;
+}
+
+.imageEvents{
+	height: 50%;
+	object-fit: cover;
+}
+
+div.container {
+	text-align: left;
+	padding: 10px 20px;
+}
+
+.eventsHeading{
+	font-size: 25px;
+}
+
+img{
+	padding: 0;
+	margin:0;
+}
+
+.privacyH1{
+	text-align: center;
+}
+
+.donateSub{
+	font-size: 14px;
+}
+
+@media only screen  and (max-width: 950px){
+
+	.privacyH1, .headingIcon{
+		font-size: 40px;
+	}
+
+	.core li, .paragraphIcon, .listingIcon{
+		font-size: 17px;
+	}
+
+	.donateSub{
+		font-size: 12px;
+	}
+
+	.navigation, #socialMedia{
+		display: none;
+	}
+
+	#CFO{
+		font-size: 25px;
+		width:180px;
+	}
+}
+
+/* Contact form*/
+
+#mapForm{
+	margin:0;
+	padding:0;
+	padding-right: 20px;
+	background-color: #006566;
+	padding-bottom: 50px;
+	padding-top: 50px;
+}
+
+#form{
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+#googleMap{
+	height: 400px;
+}
+
+#imgContact{
+	float:left;
+	padding-bottom: 20px;
+}
+
+#textContact{
+	font-size: 30px;
+	color:white;
+	padding-top: 10px;
+}
+
+@media only screen  and (max-width: 767px){
+	#form{
+		padding-right: 30px;
+	}
+
+	#googleMap{
+		height: 50vh;
+		margin-left: 20px;
+	}
+}
+
+footer *
+{
+-webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+      box-sizing: content-box;
+}
+/* Contact form*/

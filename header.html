@@ -1,0 +1,80 @@
+<html>
+<head>
+	<title>Lorem Ipsum Foundation</title>
+
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="../favicon.ico"> 
+	<link rel="stylesheet" href="style.css">
+	<script src="jquery-3.1.1.min.js"></script>
+</head>
+<body>
+	<div class = "header">
+		<div class="floatLeft">
+			<ul>
+				<li><img src="image/logo.png" id="logo"></li>
+				<li><h1 id="CFO">Lorem Ipsum Foundation</h1></li>
+			</ul>
+		</div>
+		<div class="floatRight">
+			<div id="socialMedia">
+				<ul>
+					<li><a href="https://twitter.com/"><img src="image/twitter.png"></a></li>	
+					<li><a href="https://www.facebook.com/"><img src="image/facebook.png"></a></li>	
+					<li><a href="https://www.instagram.com/"><img src="image/instagram.png"></a></li>	
+				</ul>
+			</div>
+			<div class="navigation">
+				<ul id="main-nav">
+					<li id="mainOption"><a href="index.html" class="change" >HOME</a></li>
+					<li class="dropdown" id = "AboutDrop">ABOUT US <ul class="drop-nav">
+						<li> <a href="board.html">BOARD OF DIRECTOR</a></li>
+						<li> <a href="mission.html">MISSION STATEMENT</a></li>
+						<li> <a href="coreValues.html">CORE VALUES</a></li>
+						<li> <a href="goals.html">GOALS</a></li>
+					</ul>
+				</li>
+				<li id="mainOption"><a href="service.html" >SERVICE</a></li>
+				<li id="mainOption"> <a href="donate.html">DONATE</a></li>
+			</ul>
+		</div>
+		<div class="responsiveMenu">
+			<button onclick="showMenu()"><img src="image/menu.png" id="menu-image"></button>
+		</div>
+	</div>
+</div>
+<div style="clear:both;"></div>
+<div id="responsiveMenu-content">
+	<ul>
+		<li><a href="LIF.html">HOME</a></li>
+		<li class="responsive-dropdown">
+			<a href="javascript:void(0)" class="dropbtn">ABOUT US</a>
+			<div class="dropdown-content">
+				<a href="board.html">BOARD OF DIRECTOR</a>
+				<a href="mission.html">MISSION STATEMENT</a>
+				<a href="coreValues.html">CORE VALUES</a>
+				<a href="goals.html">GOALS</a>
+			</div>
+		</li>
+		<li><a href="service.html">SERVICE</a></li>
+		<li><a href="donate.html">DONATE</a></li>
+	</ul>
+</div>
+<script>
+	function showMenu(){
+		var div = document.getElementById("responsiveMenu-content");
+		var img = document.getElementById("menu-image");
+		if (div.style.display !== "none") {
+			div.style.display = "none";
+			img.src="image/menu.png";
+
+		}
+		else {
+			div.style.display = "block";
+			img.src="image/close-menu.png";
+		}
+	}
+</script>
+<div style="clear:both;"></div>
+</body>
+</html>
