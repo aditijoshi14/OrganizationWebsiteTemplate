@@ -19,7 +19,7 @@
 <body class="donatenow-body-icon">
 
     <div id="wrapper">
-       <div class = "header">
+     <div class = "header">
         <div class="floatLeft">
             <ul>
                 <li><img src="image/logo.png" id="logo"></li>
@@ -89,12 +89,11 @@
 <div class = "div-icon">
     <center><p class="headingIcon">JOIN LOREM IPSUM FOUNDATION!</p></center>
     <center>
-        <!— https://www.paypal.com/cgi-bin/webscr —>
         <div class='row'>
             <div class='col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1'>
                 <div class='form-embedded-donation' id='donation_form'>
                     <form name="_donations" accept-charset="UTF-8" action="https://www.paypal.com/cgi-bin/webscr" class="new_donation_form" data-remote="true" id="new_donation_form" method=“post" target="_blank"
-                    ><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div><!-- TODO: On donate press with errors, donation modal shows up; no error message. -->
+                    ><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
                     <input id="donation_form_step" name="donation_form[step]" type="hidden" value="2" />
                     <div class='well' id='inline_donation_form'>
                         <h3>
@@ -210,7 +209,7 @@
                                                     <div class='col-sm-12'>
 
                                                         <input type="hidden" id= "buttonCFO" name="cmd" value="_xclick-subscriptions">
-                                                        <input type="hidden" name="business" value="PUT YOUR PAYPAL EMAIL HERE">
+                                                        <input type="hidden" name="business" value="account@example.com"> <!-- Put your paypal Email here -->
                                                         <input type="hidden" name="lc" value="CA">
                                                         <input type="hidden" name="item_name" value="Donation">
                                                         <input type="hidden" name="button_subtype" value="services">
@@ -221,93 +220,88 @@
                                                         <input type="hidden" name="p3" value="1">
                                                         <input type="hidden" id="CFOAmount" name="a3" value="1">
                                                         <input type="hidden" id="CFOAmountOneTime" name="amount" value="1">
+                                                        @
+                                                        <input type="hidden" name="src" value="1">
+                                                        <button class='btn btn-lg btn-primary btn-block' data-disable-with='Submitting...' onclick="myFunction()">Donate</button>
 
-<!-- Set recurring payments until canceled. 
-    <input type="hidden" name="hosted_button_id" value="MC5VPABAC8T98">  -->
-    <input type="hidden" name="src" value="1">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
 
-<!-- <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"> -->
-    <button class='btn btn-lg btn-primary btn-block' data-disable-with='Submitting...' onclick="myFunction()">Donate</button>
-
-</div>
-</div>
-</div>
-</form>
-
-</div>
-</div>
-</div>
+                                    </div>
+                                </div>
+                            </div>
 
 
 
-<script>
-    function myFunction() {
-        
-        if(document.getElementById("recurring_donation_period").value == "one_time"){
-            
-            var form = document.getElementById("new_donation_form");
-            document.getElementById("buttonCFO").value = "_donations";
-            if(document.getElementById('_donation_donation_amount_25.0').checked) {
-              document.getElementById("CFOAmountOneTime").value = "25";
-          }else if(document.getElementById('_donation_donation_amount_50.0').checked) {
-            document.getElementById("CFOAmountOneTime").value = "50";
-        }
-        else if(document.getElementById('_donation_donation_amount_75.0').checked) {
-            document.getElementById("CFOAmountOneTime").value = "75";
-        }
-        else if(document.getElementById('_donation_donation_amount_100.0').checked) {
-            document.getElementById("CFOAmountOneTime").value = "100";
-        }
-        else if(document.getElementById('_donation_donation_amount_250.0').checked) {
-            document.getElementById("CFOAmountOneTime").value = "250";
-        }
-        else if(document.getElementById('_donation_donation_amount_-1').checked) {
-            document.getElementById("CFOAmountOneTime").value = document.getElementById("donation_donation_amount_custom_amount").value;
-        }
-        form.submit();
-    }
-    else{
-        
-        var form = document.getElementById("new_donation_form");
-        document.getElementById("buttonCFO").value = "_xclick-subscriptions";
-        if(document.getElementById('_donation_donation_amount_25.0').checked) {
-          document.getElementById("CFOAmount").value = "25";
-      }else if(document.getElementById('_donation_donation_amount_50.0').checked) {
-        document.getElementById("CFOAmount").value = "50";
-    }
-    else if(document.getElementById('_donation_donation_amount_75.0').checked) {
-        document.getElementById("CFOAmount").value = "75";
-    }
-    else if(document.getElementById('_donation_donation_amount_100.0').checked) {
-        document.getElementById("CFOAmount").value = "100";
-    }
-    else if(document.getElementById('_donation_donation_amount_250.0').checked) {
-        document.getElementById("CFOAmount").value = "250";
-    }
-    else if(document.getElementById('_donation_donation_amount_-1').checked) {
-        document.getElementById("CFOAmount").value = document.getElementById("donation_donation_amount_custom_amount").value;
-    }
-    form.submit();
-}
-}
-</script>
-</center>
-</div>
-<div id="footer">
-    <footer>
-        <div>
-            <ul>
-                <li>Stay in touch </li>
-                <li><a href="http://facebook.com" target="_blank"><img src="image/footer-facebook.png"></a></li>
-                <li><a href="http://instagram.com" target="_blank"><img src="image/footer-instagram.png"></a></li>
-                <li><a href="http://twitter.com" target="_blank"><img src="image/footer-twitter.png"></a></li>
+                            <script>
+                                function myFunction() {
+                                    
+                                    if(document.getElementById("recurring_donation_period").value == "one_time"){
+                                        
+                                        var form = document.getElementById("new_donation_form");
+                                        document.getElementById("buttonCFO").value = "_donations";
+                                        if(document.getElementById('_donation_donation_amount_25.0').checked) {
+                                          document.getElementById("CFOAmountOneTime").value = "25";
+                                      }else if(document.getElementById('_donation_donation_amount_50.0').checked) {
+                                        document.getElementById("CFOAmountOneTime").value = "50";
+                                    }
+                                    else if(document.getElementById('_donation_donation_amount_75.0').checked) {
+                                        document.getElementById("CFOAmountOneTime").value = "75";
+                                    }
+                                    else if(document.getElementById('_donation_donation_amount_100.0').checked) {
+                                        document.getElementById("CFOAmountOneTime").value = "100";
+                                    }
+                                    else if(document.getElementById('_donation_donation_amount_250.0').checked) {
+                                        document.getElementById("CFOAmountOneTime").value = "250";
+                                    }
+                                    else if(document.getElementById('_donation_donation_amount_-1').checked) {
+                                        document.getElementById("CFOAmountOneTime").value = document.getElementById("donation_donation_amount_custom_amount").value;
+                                    }
+                                    form.submit();
+                                }
+                                else{
+                                    
+                                    var form = document.getElementById("new_donation_form");
+                                    document.getElementById("buttonCFO").value = "_xclick-subscriptions";
+                                    if(document.getElementById('_donation_donation_amount_25.0').checked) {
+                                      document.getElementById("CFOAmount").value = "25";
+                                  }else if(document.getElementById('_donation_donation_amount_50.0').checked) {
+                                    document.getElementById("CFOAmount").value = "50";
+                                }
+                                else if(document.getElementById('_donation_donation_amount_75.0').checked) {
+                                    document.getElementById("CFOAmount").value = "75";
+                                }
+                                else if(document.getElementById('_donation_donation_amount_100.0').checked) {
+                                    document.getElementById("CFOAmount").value = "100";
+                                }
+                                else if(document.getElementById('_donation_donation_amount_250.0').checked) {
+                                    document.getElementById("CFOAmount").value = "250";
+                                }
+                                else if(document.getElementById('_donation_donation_amount_-1').checked) {
+                                    document.getElementById("CFOAmount").value = document.getElementById("donation_donation_amount_custom_amount").value;
+                                }
+                                form.submit();
+                            }
+                        }
+                    </script>
+                </center>
             </div>
-            <p>
-                &#169;2050. LOREM IPSUM FOUNDATION IS NOT A REAL ORGANIZATION. THIS IS A DEMO WEBSITE.
-            </p>
-        </footer>
-    </div>
-</div>
-</body>
-</html>
+            <div id="footer">
+                <footer>
+                    <div>
+                        <ul>
+                            <li>Stay in touch </li>
+                            <li><a href="http://facebook.com" target="_blank"><img src="image/footer-facebook.png"></a></li>
+                            <li><a href="http://instagram.com" target="_blank"><img src="image/footer-instagram.png"></a></li>
+                            <li><a href="http://twitter.com" target="_blank"><img src="image/footer-twitter.png"></a></li>
+                        </div>
+                        <p>
+                            &#169;2050. LOREM IPSUM FOUNDATION IS NOT A REAL ORGANIZATION. THIS IS A DEMO WEBSITE.
+                        </p>
+                    </footer>
+                </div>
+            </div>
+        </body>
+        </html>
