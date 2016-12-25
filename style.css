@@ -3,8 +3,9 @@
 	font-family:Verdana;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
 	background-color:#F3F3F3;
-	height: 114px;
+	height: 125px;
 	padding: 0;
+	position: relative;
 }
 
 html, body{
@@ -155,7 +156,7 @@ li.responsive-dropdown {
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	float: left;
 	margin-left: 20px;
-	margin-top: 10px;
+	margin-top: 8px;
 }
 
 .dropdown-content a {
