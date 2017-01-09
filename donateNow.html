@@ -1,0 +1,307 @@
+<html>
+<head>
+    <title>Lorem Ipsum Foundation </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="donatenow.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $("#header").load("header.html");
+        });
+    </script>
+    <script type="text/javascript">
+        $(function(){
+            $("#footer").load("footer.html");
+        });
+    </script>
+</head>
+<body class="donatenow-body-icon">
+
+    <div id="wrapper">
+     <div class = "header">
+        <div class="floatLeft">
+            <ul>
+                <li><img src="image/logo.png" id="logo"></li>
+                <li><h1 id="CFO">Lorem Ipsum Foundation</h1></li>
+            </ul>
+        </div>
+        <div class="floatRight">
+            <div id="socialMedia">
+                <ul>
+                    <li><a href="https://twitter.com/" target="_blank"><img src="image/twitter.png"></a></li>   
+                    <li><a href="https://www.facebook.com/" target="_blank"><img src="image/facebook.png"></a></li> 
+                    <li><a href="https://www.instagram.com/" target="_blank"><img src="image/instagram.png"></a></li>   
+                </ul>
+            </div>
+            <div class="navigation">
+                <ul id="main-nav">
+                    <li id="mainOption" style="text-decoration: none;"><a href="index.html" class="change">HOME</a></li>
+                    <li class="dropdown" id = "AboutDrop">ABOUT US <ul class="drop-nav">
+                        <li> <a href="board.html">BOARD OF DIRECTOR</a></li>
+                        <li> <a href="mission.html">MISSION STATEMENT</a></li>
+                        <li> <a href="coreValues.html">CORE VALUES</a></li>
+                        <li> <a href="goals.html">GOALS</a></li>
+                    </ul>
+                </li>
+                <li id="mainOption"><a href="service.html" >SERVICE</a></li>
+                <li id="mainOption"> <a href="donate.html">DONATE</a></li>
+            </ul>
+        </div>
+        <div class="responsiveMenu">
+            <button onclick="showMenu()"><img src="image/menu.png" id="menu-image"></button>
+        </div>
+    </div>
+</div>
+<div style="clear:both;"></div>
+<div id="responsiveMenu-content">
+    <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li class="responsive-dropdown">
+            <a href="javascript:void(0)" class="dropbtn">ABOUT US</a>
+            <div class="dropdown-content">
+                <a href="board.html">BOARD OF DIRECTOR</a>
+                <a href="mission.html">MISSION STATEMENT</a>
+                <a href="coreValues.html">CORE VALUES</a>
+                <a href="goals.html">GOALS</a>
+            </div>
+        </li>
+        <li><a href="service.html">SERVICE</a></li>
+        <li><a href="donate.html">DONATE</a></li>
+    </ul>
+</div>
+<script>
+    function showMenu(){
+        var div = document.getElementById("responsiveMenu-content");
+        var img = document.getElementById("menu-image");
+        if (div.style.display !== "none") {
+            div.style.display = "none";
+            img.src="image/menu.png";
+
+        }
+        else {
+            div.style.display = "block";
+            img.src="image/close-menu.png";
+        }
+    }
+</script>
+<div style="clear:both;"></div>
+<div class = "div-icon">
+    <center><p class="headingIcon">JOIN LOREM IPSUM FOUNDATION!</p></center>
+    <center>
+        <div class='row'>
+            <div class='col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1'>
+                <div class='form-embedded-donation' id='donation_form'>
+                    <form name="_donations" accept-charset="UTF-8" action="https://www.paypal.com/cgi-bin/webscr" class="new_donation_form" data-remote="true" id="new_donation_form" method=“post" target="_blank"
+                    ><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+                    <input id="donation_form_step" name="donation_form[step]" type="hidden" value="2" />
+                    <div class='well' id='inline_donation_form'>
+                        <h3>
+                            <label for="donation_donation_amount">Donation Amount</label>
+                        </h3>
+                        <div class='suggested-amt-count-6' id='modal-suggested-amts-wrapper'>
+                            <input id="donation_donation_amount" name="amount" type="hidden" checked="checked"/>
+                            <div class='suggested-amt' style='width: 16.000%'>
+                                <div class='suggested-amt-item'>
+                                    <input id="_donation_donation_amount_25.0" name="a3" type="radio" value="25.0" checked="checked"/>
+                                    <label for="_donation_donation_amount_25.0">$25
+                                    </label></div>
+                                </div>
+
+                                <div class='suggested-amt' style='width: 16.000%'>
+                                    <div class='suggested-amt-item'>
+                                        <input id="_donation_donation_amount_50.0" name="a3" type="radio" value="50.0" />
+                                        <label for="_donation_donation_amount_50.0">$50
+                                        </label></div>
+                                    </div>
+
+                                    <div class='suggested-amt' style='width: 16.000%'>
+                                        <div class='suggested-amt-item'>
+                                            <input id="_donation_donation_amount_75.0" name="a3" type="radio" value="75.0" />
+                                            <label for="_donation_donation_amount_75.0">$75
+                                            </label></div>
+                                        </div>
+
+                                        <div class='suggested-amt' style='width: 16.000%'>
+                                            <div class='suggested-amt-item'>
+                                                <input id="_donation_donation_amount_100.0" name="a3" type="radio" value="100.0" />
+                                                <label for="_donation_donation_amount_100.0">$100
+                                                </label></div>
+                                            </div>
+
+                                            <div class='suggested-amt' style='width: 16.000%'>
+                                                <div class='suggested-amt-item'>
+                                                    <input id="_donation_donation_amount_250.0" name="a3" type="radio" value="250.0" />
+                                                    <label for="_donation_donation_amount_250.0">$250
+                                                    </label></div>
+                                                </div>
+
+
+                                                <div class='suggested-amt' id='donation_custom_amount' style='width: 18.000%'>
+                                                    <div class='suggested-amt-item'>
+                                                        <div class='input-group'>
+                                                            <span class='input-group-addon'>
+                                                                <input id="_donation_donation_amount_-1" name="a3" type="radio" value="0" /> 
+                                                                <label for="_donation_donation_amount_-1"> Other</label>
+                                                            </span>
+                                                            <input class="form-control" id="donation_donation_amount_custom_amount" min="1" name="a3" step="any" type="number" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+
+                                            <input id="donation_form_targetable_type" name="donation_form[targetable_type]" type="hidden" value="Project" />
+                                            <input id="donation_form_targetable_id" name="donation_form[targetable_id]" type="hidden" value="6272" />
+
+                                            <div class='row alt-row' id='recurring_donation_block'>
+                                                <div class='form-row'>
+                                                    <div class='col-sm-6'>
+                                                        <label class="modal-block-label" for="recurring_donation_period">Donation Frequency</label>
+                                                        <select name="t3" class="form-control" id="recurring_donation_period" include_blank="false" >
+                                                            <option value="one_time">One Time</option>
+                                                            <option value="W">Weekly</option>
+                                                            <option value="M">Monthly</option>
+                                                            <option value="Y">Annually</option></select>
+                                                        </div>
+                                                        <div class='col-sm-6 hidden' id='donation_recurring_donation_end'>
+                                                            <label class="modal-block-label" for="recurring_donation_end_date">Ending (optional)</label>
+                                                            <div class='full-width-input-and-icon'>
+                                                                <label class='icon-label' for='recurring_donation_end_date'>
+                                                                    <span class='icon-calendar'></span>
+                                                                </label>
+                                                                <input class="form-control icon-input" id="recurring_donation_end_date" name="recurring_donation[end_date]" placeholder="Enter a Date" type="text" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Donation Note -->
+                                                <div class='modal-row'>
+                                                    <label class="modal-block-label" for="modal_donation_note">Your Note for the Donor Scroll</label>
+                                                    <textarea class="form-control" id="modal_donation_note" name="donation[note]" placeholder="Write a note for the donor scroll.">
+</textarea>
+                                                    </textarea>
+                                                    <div class='counter-block'>
+                                                        <span id='donation_note_counter'></span>
+                                                        / 140
+                                                    </div>
+                                                </div>
+                                                <div class='modal-row publish-settings'>
+                                                    <div class='form-row'>
+                                                        <div class='col-sm-5'>
+                                                            <input name="donation[publish_my_donation_amount]" type="hidden" value="0" /><input checked="checked" id="donation_publish_my_donation_amount" name="donation[publish_my_donation_amount]" type="checkbox" value="1" />
+                                                            <label for="donation_publish_my_donation_amount">Post my donation amount</label>
+                                                        </div>
+                                                        <div class='col-sm-3'>
+                                                            <input name="donation[publish_my_name]" type="hidden" value="0" /><input checked="checked" id="donation_publish_my_name" name="donation[publish_my_name]" type="checkbox" value="1" />
+                                                            <label for="donation_publish_my_name">Post my name</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class='hidden modal-row tribute-info'>
+                                                    <div class='form-row'>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class='row'>
+                                                    <div class='col-sm-12'>
+
+                                                        <input type="hidden" id= "buttonCFO" name="cmd" value="_xclick-subscriptions">
+                                                        <input type="hidden" name="business" value="account@example.com"> <!-- Put your paypal Email here -->
+                                                        <input type="hidden" name="lc" value="CA">
+                                                        <input type="hidden" name="item_name" value="Donation">
+                                                        <input type="hidden" name="button_subtype" value="services">
+                                                        <input type="hidden" name="no_note" value="1">
+                                                        <input type="hidden" name="no_shipping" value="1">
+                                                        <input type="hidden" name="currency_code" value="USD">
+                                                        <input type="hidden" name="bn" value="PP-DonationsBF:btn_donateCC_LG.gif:NonHosted">
+                                                        <input type="hidden" name="p3" value="1">
+                                                        <input type="hidden" id="CFOAmount" name="a3" value="1">
+                                                        <input type="hidden" id="CFOAmountOneTime" name="amount" value="1">
+                                                        <input type="hidden" name="src" value="1">
+                                                        <button class='btn btn-lg btn-primary btn-block' data-disable-with='Submitting...' onclick="myFunction()">Donate</button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <script>
+                                function myFunction() {
+                                    
+                                    if(document.getElementById("recurring_donation_period").value == "one_time"){
+                                        
+                                        var form = document.getElementById("new_donation_form");
+                                        document.getElementById("buttonCFO").value = "_donations";
+                                        if(document.getElementById('_donation_donation_amount_25.0').checked) {
+                                          document.getElementById("CFOAmountOneTime").value = "25";
+                                      }else if(document.getElementById('_donation_donation_amount_50.0').checked) {
+                                        document.getElementById("CFOAmountOneTime").value = "50";
+                                    }
+                                    else if(document.getElementById('_donation_donation_amount_75.0').checked) {
+                                        document.getElementById("CFOAmountOneTime").value = "75";
+                                    }
+                                    else if(document.getElementById('_donation_donation_amount_100.0').checked) {
+                                        document.getElementById("CFOAmountOneTime").value = "100";
+                                    }
+                                    else if(document.getElementById('_donation_donation_amount_250.0').checked) {
+                                        document.getElementById("CFOAmountOneTime").value = "250";
+                                    }
+                                    else if(document.getElementById('_donation_donation_amount_-1').checked) {
+                                        document.getElementById("CFOAmountOneTime").value = document.getElementById("donation_donation_amount_custom_amount").value;
+                                    }
+                                    form.submit();
+                                }
+                                else{
+                                    
+                                    var form = document.getElementById("new_donation_form");
+                                    document.getElementById("buttonCFO").value = "_xclick-subscriptions";
+                                    if(document.getElementById('_donation_donation_amount_25.0').checked) {
+                                      document.getElementById("CFOAmount").value = "25";
+                                  }else if(document.getElementById('_donation_donation_amount_50.0').checked) {
+                                    document.getElementById("CFOAmount").value = "50";
+                                }
+                                else if(document.getElementById('_donation_donation_amount_75.0').checked) {
+                                    document.getElementById("CFOAmount").value = "75";
+                                }
+                                else if(document.getElementById('_donation_donation_amount_100.0').checked) {
+                                    document.getElementById("CFOAmount").value = "100";
+                                }
+                                else if(document.getElementById('_donation_donation_amount_250.0').checked) {
+                                    document.getElementById("CFOAmount").value = "250";
+                                }
+                                else if(document.getElementById('_donation_donation_amount_-1').checked) {
+                                    document.getElementById("CFOAmount").value = document.getElementById("donation_donation_amount_custom_amount").value;
+                                }
+                                form.submit();
+                            }
+                        }
+                    </script>
+                </center>
+            </div>
+            <div id="footer">
+                <footer>
+                    <div>
+                        <ul>
+                            <li>Stay in touch </li>
+                            <li><a href="http://facebook.com" target="_blank"><img src="image/footer-facebook.png"></a></li>
+                            <li><a href="http://instagram.com" target="_blank"><img src="image/footer-instagram.png"></a></li>
+                            <li><a href="http://twitter.com" target="_blank"><img src="image/footer-twitter.png"></a></li>
+                        </div>
+                        <p>
+                            &#169;2050. LOREM IPSUM FOUNDATION IS NOT A REAL ORGANIZATION. THIS IS A DEMO WEBSITE.
+                        </p>
+                    </footer>
+                </div>
+            </div>
+        </body>
+        </html>
