@@ -91,13 +91,14 @@ html, body{
 	font-family: Didot;
 	text-align: center;
 	color: #006566;
+	font-weight: bold;
 }
 
 #logo{
 	padding-left:4%;
 }
 
-@media only screen  and (max-width: 396px){
+@media only screen  and (max-width: 399px){
 	#CFO{
 		display: none;
 	}
