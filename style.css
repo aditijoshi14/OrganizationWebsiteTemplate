@@ -97,7 +97,7 @@ html, body{
 	padding-left:4%;
 }
 
-@media only screen  and (max-width: 415px){
+@media only screen  and (max-width: 396px){
 	#CFO{
 		display: none;
 	}
