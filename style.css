@@ -97,6 +97,12 @@ html, body{
 	padding-left:4%;
 }
 
+@media only screen  and (max-width: 415px){
+	#CFO{
+		display: none;
+	}
+}
+
 /*header*/
 
 /*responsive menu*/
@@ -110,6 +116,7 @@ html, body{
 	cursor:pointer;
 	overflow: hidden;
 	outline:none;
+	padding-right: 20px;
 }
 
 
@@ -331,6 +338,10 @@ figure figcaption{
 
 #optionBar{
 	background-color:#F3F3F3;	
+}
+
+.row{
+	width: 100%;
 }
 
 /*Main Page*/
@@ -621,6 +632,10 @@ img{
 	#CFO{
 		font-size: 25px;
 		width:180px;
+	}
+
+	.header{
+	height: 115px;
 	}
 }
 
