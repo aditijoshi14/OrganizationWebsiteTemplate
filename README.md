@@ -1,2 +1,2 @@
-# OrganizationWebsiteTemplate
-A HTML and CSS website template for an Organization.
+# Organization Website Template
+A simple website template for an organization built using HTML, CSS and PHP. 
