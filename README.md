@@ -1,2 +1,2 @@
 # Organization Website Template
-A website template for an Organization using HTML, CSS and PHP.
+A simple website template for an organization built using HTML, CSS and PHP. 
